@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:900|Fira+Sans:900|Lora:700|Merriweather:900');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* shared */
+
+body section#coidea {
+  position: relative;
+  display: block;
+  height: 50%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+body section#coidea .grid {
+  position: relative;
+  display: block;
+  min-width: 480px;
+  width: 100%;
+  width: calc( 100% - 64px );
+  height: 70%;
+  margin: 0 auto;
+  padding: 128px 32px 32px;
+  overflow: hidden;
+}
+
+body section#coidea .grid .grid-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 32px 0;
+}
+
+body section#coidea .grid .grid-item .image {
+  position: relative;
+  display: block;
+  min-width: 480px;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+body section#coidea .grid .grid-item .image img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+body section#coidea .grid .grid-item .content {
+  position: absolute;
+  display: block;
+  width: auto;
+  min-width: 480px;
+  height: auto;
+  padding-left: 480px;
+  overflow: hidden;
+  float: left;
+}
+
+body section#coidea .grid .grid-item .content h2 {
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  opacity: 0;
+
+}
+
+/* effect-first */
+
+body section#coidea.effect-1st {
+ font-family: 'Heebo', sans-serif;
+  height: 70%;
+}
+
+body section#coidea.effect-1st .grid .grid-item .image .overlay {
+  background-color: #040d21;
+  position: absolute;
+  width: 100%;
+  height:100%;
+  left: 0;
+  top: 50px;
+}
+
+body section#coidea.effect-1st .grid .grid-item .content h2 {
+  font-size: 64px;
+  line-height: 72px;
+  padding-top: 32px;
+  color: #F8F8F8;
+  text-shadow: 0px 7px 15px #121212;
+}
+
+
+/* effect-second */
+
+body section#coidea.effect-2nd {
+  font-family: 'Catamaran', sans-serif;
+}
+
+body section#coidea.effect-2nd .grid .grid-item .image .overlay1 {
+  background-color: #040d21;
+  position: absolute;
+  width: 100%;
+  height: 33.3333%;
+  left: 0;
+  top: 0;
+}
+
+body section#coidea.effect-2nd .grid .grid-item .image .overlay2 {
+  background-color: #040d21;
+  position: absolute;
+  width: 100%;
+  height: 33.3333%;
+  left: 0;
+  top: 33.3333%;
+}
+
+body section#coidea.effect-2nd .grid .grid-item .image .overlay3 {
+  background-color: #040d21;
+  position: absolute;
+  width: 100%;
+  height: 33.3333%;
+  left: 0;
+  top: 66.6666%;
+}
+
+body section#coidea.effect-2nd .grid .grid-item .content h2 {
+  font-size: 64px;
+  line-height: 72px;
+  padding-top: 32px;
+  color: #121212;
+  text-shadow: 0px 7px 15px rgba(34,34,34,0.15);
+}
+
+/* effect-third */
+
+body section#coidea.effect-3rd {
+
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body section#coidea.effect-3rd .grid .grid-item .image .overlay1 {
+  background-color: #040d21;
+  position: absolute;
+  width: 33.3333%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+body section#coidea.effect-3rd .grid .grid-item .image .overlay2 {
+  background-color: #040d21;
+  position: absolute;
+  width: 33.3333%;
+  height: 100%;
+  left: 33.3333%;
+  top: 0;
+}
+
+body section#coidea.effect-3rd .grid .grid-item .image .overlay3 {
+  background-color: #040d21;
+  position: absolute;
+  width: 33.3333%;
+  height: 100%;
+  left: 66.6666%;
+  top: 0;
+}
+
+body section#coidea.effect-3rd .grid .grid-item .content h2 {
+  font-size: 64px;
+  line-height: 72px;
+  padding-top: 32px;
+  color: #F8F8F8;
+  text-shadow: 0px 7px 15px rgba(34,34,34,1);
+}
+
+/* effect-fourth */
+
+body section#coidea.effect-4th {
+
+  font-family: 'Catamaran', sans-serif;
+}
+
+body section#coidea.effect-4th .grid .grid-item .image .overlay1 {
+  background-color: #040d21;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -50%;
+  top: -50%;
+}
+
+body section#coidea.effect-4th .grid .grid-item .content h2 {
+  font-size: 64px;
+  line-height: 72px;
+  padding-top: 32px;
+  color: #f8f8f8;
+  text-shadow: 0px 7px 15px #121212;
+}
+
+
+@media screen and (max-width: 992px) {
+
+  body section#coidea {
+    height: auto;
+  }
+
+  body section#coidea .grid {
+    padding: 32px;
+  }
+
+  body section#coidea .grid .grid-item {
+    height: auto; 
+  }
+
+  body section#coidea .grid .grid-item .image {
+    max-width: 120%;
+    max-width: calc( 120% - 32px ) !important;
+  }
+
+  body section#coidea .grid .grid-item .content {
+    max-width: 95% !important;
+    padding-left: 48px !important;
+  }
+
+  body section#coidea .grid .grid-item .content h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    padding-top: 16px !important;
+  }
+
+  body section#coidea.effect-4th {
+    height: 150vh;
+  }
+
+}

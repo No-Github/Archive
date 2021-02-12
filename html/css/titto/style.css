@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:900");
+
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 7rem;
+  line-height: 1;
+  letter-spacing: .3rem;
+  color: #253057;
+  text-align: center;
+}
+p.desc {
+  padding: 1rem;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  opacity: 0;
+  transition: 2s 1.5s;
+}
+
+@media screen and (max-width: 450px) {
+  p {
+    font-size: 3rem;
+  }
+  p.desc {
+    font-size: .5rem;
+  }
+}
+
+/*code sample from here*/
+/*
+[required code]
+parent {
+  opacity: 0;
+  perspective: xxx; //3d effective dose
+}
+parent span {
+  //flip effect
+  transform : rotateY(xxxdeg);  //you can also use 'rotateX' together.
+	(transform-origin : xxx;) //If you want.
+  //fade effect
+  opacity: 0;
+}
+*/
+
+.ex1 {
+  opacity: 0;
+  perspective: 200px;font-family: 'Heebo', sans-serif;
+  transform-origin: -50% 75%;
+
+
+}
+.ex1 span {
+  transform: rotateY(-90deg);
+  opacity: 0;
+}
+
+.ex2 {
+  opacity: 0;
+  perspective: 200px;font-family: 'Heebo', sans-serif;
+}
+.ex2 span {
+  transform: rotateY(-90deg) rotateX(45deg);
+  transform-origin: -50% 75%;
+  opacity: 0;
+}

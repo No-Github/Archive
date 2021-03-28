@@ -317,7 +317,6 @@ EOF
     exit
   fi
 
-  proxychains4 exec zsh -l
 }
 
 main "$@"

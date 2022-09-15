@@ -1,0 +1,29 @@
+[fedora]
+name=Fedora $releasever - $basearch - aliyun
+#failovermethod=priority
+baseurl=http://repo.huaweicloud.com/fedora/releases/$releasever/Everything/$basearch/os/
+#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&arch=$basearch
+enabled=1
+metadata_expire=7d
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch
+
+[fedora-debuginfo]
+name=Fedora $releasever - $basearch - Debug - aliyun
+#failovermethod=priority
+baseurl=http://repo.huaweicloud.com/fedora/releases/$releasever/Everything/$basearch/debug/tree/
+#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&arch=$basearch
+enabled=0
+metadata_expire=7d
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch
+
+[fedora-source]
+name=Fedora $releasever - Source - aliyun
+#failovermethod=priority
+baseurl=http://repo.huaweicloud.com/fedora/releases/$releasever/Everything/source/tree/
+#mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&arch=$basearch
+enabled=0
+metadata_expire=7d
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$basearch
